@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dashboard - Ibnu Bank</title>
+</head>
+<body>
+    <!-- Header Starts -->
+    <header id="header-part">
+        <section id="header-section">
+            <div class="container">
+                <h1 class="uppercase text-7xl text-center font-semibold mt-10"><span class="text-blue-700">Dashboard - </span>Ibnu Bank!</h1>
+            </div>
+        </section>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main Starts -->
+    <main id="main-part" class="w-4/5 mx-auto mb-16">
+        <section id="main-section" class="my-5">
+            <!-- Mooooney Title -->
+            <h1 class="text-5xl text-center font-semibold mb-10">Let's get some <span class="text-indigo-700">Moooooney!</span></h1>
+
+            <!-- Banking System Starts -->
+            <div class="container mx-auto">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="py-14 px-16 text-white bg-green-400 rounded">
+                        <h2 class="text-3xl py-1">Deposite</h2>
+                        <h3 class="text-6xl py-1">$<span id="deposite-amount">00</span></h3>
+                    </div>
+                    <div class="py-14 px-16 text-white bg-red-400 rounded">
+                        <h2 class="text-3xl py-1">Withdraw</h2>
+                        <h3 class="text-6xl py-1">$<span id="withdraw-amount">00</span></h3>
+                    </div>
+                    <div class="py-14 px-16 text-white bg-blue-400 rounded">
+                        <h2 class="text-3xl py-1">Balance</h2>
+                        <h3 class="text-6xl py-1">$<span id="total-amount">1240</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Banking System Ends -->
+
+            <!-- Deposite and Withdraw Starts -->
+            <section id="deposite-withdraw" class="my-5">
+                <div class="container">
+                    <!-- Deposite Input -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div id="deposite-form" class="p-10 bg-purple-300 overflow-hidden rounded">
+                            <h3 class="text-3xl py-1">Deposite Amount</h3>
+                            <input class="w-full p-3 mt-3 rounded block" type="number" name="email" id="deposite-input" placeholder="$00">
+                            <button id="deposite-button" class="w-full py-2 bg-yellow-500 text-2xl mt-5 uppercase rounded">Deposite</button>
+                        </div>
+                        <!-- Withdraw Input -->
+                        <div id="withdraw-form" class="p-10 bg-indigo-300 overflow-hidden rounded">
+                            <h3 class="text-3xl py-1">Withdraw Amount</h3>
+                            <input class="w-full p-3 mt-3 rounded block" type="number" name="email" id="withdraw-input" placeholder="$00">
+                            <button id="withdraw-button" class="w-full py-2 bg-yellow-500 text-2xl mt-5 uppercase rounded">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Deposite and Withdraw Ends -->
+        </section>
+    </main>
+    <!-- Main Ends -->
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
